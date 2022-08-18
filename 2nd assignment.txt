@@ -1,0 +1,26 @@
+2./*. Write a c program to find out sum of factorial values of all elements of array.*/
+
+
+#include<stdio.h>
+int main(){
+	int arr[]={2,3,5,7,9,11,12,13,17};
+	int len=sizeof(arr)/sizeof(int);
+	int flag,i,j,n,,f=1;
+	
+	for(i=0;i<len;i++){
+		n=arr[i];
+		flag=0;
+		for(j=2;j<n/2;j++){ 
+			if((n%j)==0){flag=1;break;}
+		}
+		if(flag==0){
+printf("%d",n);
+f=f*n;
+			
+		}
+	}
+	
+	}
+	printf("\nFactorial = %d",f);
+	return 0;
+}
